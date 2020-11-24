@@ -1,0 +1,8 @@
+D:/Repos/AmnesiaTheDarkDescent/HPL2/dependencies/sources/zlib-1.2.11/CMakeFiles/zlib.dir
+D:/Repos/AmnesiaTheDarkDescent/HPL2/dependencies/sources/zlib-1.2.11/CMakeFiles/zlibstatic.dir
+D:/Repos/AmnesiaTheDarkDescent/HPL2/dependencies/sources/zlib-1.2.11/CMakeFiles/example.dir
+D:/Repos/AmnesiaTheDarkDescent/HPL2/dependencies/sources/zlib-1.2.11/CMakeFiles/minigzip.dir
+D:/Repos/AmnesiaTheDarkDescent/HPL2/dependencies/sources/zlib-1.2.11/CMakeFiles/INSTALL.dir
+D:/Repos/AmnesiaTheDarkDescent/HPL2/dependencies/sources/zlib-1.2.11/CMakeFiles/RUN_TESTS.dir
+D:/Repos/AmnesiaTheDarkDescent/HPL2/dependencies/sources/zlib-1.2.11/CMakeFiles/ALL_BUILD.dir
+D:/Repos/AmnesiaTheDarkDescent/HPL2/dependencies/sources/zlib-1.2.11/CMakeFiles/ZERO_CHECK.dir

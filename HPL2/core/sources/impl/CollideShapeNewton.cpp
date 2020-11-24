@@ -232,7 +232,7 @@ namespace hpl {
 
 			cCollideShapeNewton *pNewtonShape = static_cast<cCollideShapeNewton*>(avShapes[i]);
 
-			NewtonSceneProxy* pProxy = NewtonSceneCollisionCreateProxy(mpNewtonCollision, pNewtonShape->GetNewtonCollision());
+			NewtonSceneProxy* pProxy = NewtonSceneCollisionCreateProxy(mpNewtonCollision, pNewtonShape->GetNewtonCollision(), &cMatrixf::Identity.GetTranspose().m[0][0]);
 			//cMatrixf mtxTransform = cMatrixf::Identity;
 			//NewtonSceneProxySetMatrix(pProxy, &mtxTransform.GetTranspose().m[0][0]);
 			if(apMatrices)
@@ -311,11 +311,11 @@ namespace hpl {
 		//Log("%d triangles: ", alIndexNum/3);
 
 		mpNewtonCollision = NewtonCreateTreeCollision(mpNewtonWorld, 0);
-		//Log("-- Creating mesh collision.:\n");
+		Log("-- Creating mesh collision.:\n");
 		NewtonTreeCollisionBeginBuild(mpNewtonCollision);
 		for(int tri = 0; tri < alIndexNum; tri+=3)
 		{
-			//Log("tri: %d:\n", tri/3);
+			Log("tri: %d:\n", tri/3);
 			for(int idx =0; idx < 3; idx++)
 			{
 				int lVtx = apIndexArray[tri + 2-idx]*alVtxStride;

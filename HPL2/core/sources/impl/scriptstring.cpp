@@ -671,7 +671,7 @@ void RegisterScriptString_Native(asIScriptEngine *engine)
 	else
 	{
 		r = engine->RegisterObjectMethod("string", "uint64 length() const", asMETHOD(string,size), asCALL_THISCALL); assert( r >= 0 );
-		r = engine->RegisterObjectMethod("string", "void resize(uint64)", asFUNCTION(StringResize), asCALL_THISCALL); assert( r >= 0 );
+		r = engine->RegisterObjectMethod("string", "void resize(uint64)", asFUNCTION(StringResize), asCALL_CDECL_OBJFIRST); assert( r >= 0 );
 	}
 
     // TODO: Add factory  string(const string &in str, int repeatCount)

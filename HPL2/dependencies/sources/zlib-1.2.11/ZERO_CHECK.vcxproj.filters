@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Repos\AmnesiaTheDarkDescent\HPL2\dependencies\sources\zlib-1.2.11\CMakeFiles\c9a78c2e6b6cdb32c0e94342e77bc148\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E2128B22-74BE-3F4B-9FA0-C03793EB9724}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

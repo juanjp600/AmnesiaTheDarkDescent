@@ -21,7 +21,7 @@
 //Use this to check for memory leaks!
 
 #ifdef WIN32
-#pragma comment(lib, "angelscript.lib")
+#pragma comment(lib, "angelscript64.lib")
 #define UNICODE
 #include <windows.h>
 #include <shlobj.h>
@@ -249,6 +249,8 @@ namespace hpl {
 		sMess += text;
 		gLogWriter.Write(sMess);
 
+		OutputDebugStringA(sMess.c_str());
+
 		if(gpLogMessageCallbackFunc) gpLogMessageCallbackFunc(eLogOutputType_Error, sMess.c_str());
 	}
 
@@ -288,6 +290,8 @@ namespace hpl {
 		tString sMess = "";
 		sMess += text;
 		gLogWriter.Write(sMess);
+
+		OutputDebugStringA(sMess.c_str());
 
 		if(gpLogMessageCallbackFunc) gpLogMessageCallbackFunc(eLogOutputType_Normal, sMess.c_str());
 	}

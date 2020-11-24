@@ -278,7 +278,11 @@ namespace hpl {
 		
 		////////////////////////////////////
 		// Try loading cache
-		LoadCacheFile(asFile);
+		//TODO: Fix cache loading. Something changed when
+		//upgrading from Newton 2.0 to 2.35 that corrupts
+		//the BVH meshes and crashes the game, so for now
+		//we'll just be loading from XML exclusively.
+		//LoadCacheFile(asFile);
 
 
 		////////////////////////////////////

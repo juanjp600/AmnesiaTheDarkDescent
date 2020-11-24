@@ -21,10 +21,12 @@
 #pragma comment(lib, "OpenGL32.lib")
 #pragma comment(lib, "GLu32.lib")
 //#pragma comment(lib, "GLaux.lib")
+#ifdef WITH_CG
 #pragma comment(lib, "Cg.lib")
 #pragma comment(lib, "CgGL.lib")
+#endif
 //#pragma comment(lib, "SDL_ttf.lib")
-#pragma comment(lib, "TaskKeyHook.lib")
+////#pragma comment(lib, "TaskKeyHook.lib")
 #endif
 
 #include <assert.h>

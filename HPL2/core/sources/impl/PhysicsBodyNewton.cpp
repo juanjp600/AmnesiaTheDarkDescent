@@ -45,7 +45,8 @@ namespace hpl {
 		
 		mpNewtonWorld = pWorldNewton->GetNewtonWorld();
 		mpNewtonBody = NewtonCreateBody(pWorldNewton->GetNewtonWorld(), 
-										pShapeNewton->GetNewtonCollision());
+										pShapeNewton->GetNewtonCollision(),
+										&cMatrixf::Identity.GetTranspose().m[0][0]);
 
 		mpCallback = hplNew( cPhysicsBodyNewtonCallback, () );
 
