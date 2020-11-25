@@ -405,7 +405,9 @@ dgFloat32 dgFastRayTest::PolygonIntersect (const dgVector& normal, const dgFloat
 
 						tOut = dgFloat32 (tOut_);
 					}
-				}
+				} else if (unrealible < dgFloat32 (0.0f)) {
+                    return 1.2f;
+                }
 			#endif
 
       //the line is to the left of all the polygon edges,

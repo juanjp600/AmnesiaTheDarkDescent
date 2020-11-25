@@ -1326,6 +1326,9 @@ namespace hpl {
 		int lTotalVtxAmount =0;
 		int lTotalIdxAmount =0;
 		tString sName = "CombinedObjects"+cString::ToString(mlCombinedMeshNameCount);
+		if (alFirstIdx >= alLastIdx) { sName = avObjects[alFirstIdx]->GetName(); }
+		sName = "MESH_"+sName;
+
 		for(int i=alFirstIdx; i<=alLastIdx; ++i)
 		{
 			//Check if the sub mesh is visible, else skip
@@ -1478,6 +1481,8 @@ namespace hpl {
 		int lTotalVtxAmount =0;
 		int lTotalIdxAmount =0;
 		tString sName = "CombinedObjects"+cString::ToString(mlCombinedBodyNameCount);
+		if (alFirstIdx >= alLastIdx) { sName = avObjects[alFirstIdx].mpObject->GetName(); }
+		sName = "OBJ_"+sName;
 		for(int i=alFirstIdx; i<=alLastIdx; ++i)
 		{
 			if(avObjects[i].mpUserData->mbCollides==false) continue;

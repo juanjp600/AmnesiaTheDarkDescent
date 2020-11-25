@@ -238,6 +238,7 @@ dgFloat32 dgCollisionBVH::RayHit(void *context, const dgFloat32* const polygon,
       &polygon[indexArray[indexCount] * (strideInBytes / sizeof(dgFloat32))]);
   dgFloat32 t = me.PolygonIntersect(normal, polygon, strideInBytes, indexArray,
       indexCount);
+
   if (t < dgFloat32(1.0f))
   {
 //		if (t <= me.m_t) {

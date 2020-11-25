@@ -445,11 +445,11 @@ dgInt32 dgCollisionMesh::dgCollisionConvexPolygon::ClipContacts (dgInt32 count, 
 						_ASSERTE ((normal % normal) > 0.9999f);
 						_ASSERTE ((aNormal % aNormal) > 0.9999f);
 						dgFloat32 dot = normal % aNormal;
-						if ((dot * dot) > dgFloat32 (0.999f)) {
+						if ((dot * dot) > dgFloat32 (1.001f)) {
 							normal += aNormal;
 							contactOut[i].m_normal = normal.Scale (dgRsqrt (normal % normal));
 							contactOut[i].m_isEdgeContact = 0;
-						} else {
+						} else if ((dot * dot) < dgFloat32 (0.999f)) {
 							dgVector planeNormal (normal * aNormal);
 							dgVector projectNormal (contactOut[i].m_normal - planeNormal.Scale ((planeNormal % contactOut[i].m_normal) /(planeNormal % planeNormal)));
 							dgVector dirPlane (projectNormal * aNormal);
