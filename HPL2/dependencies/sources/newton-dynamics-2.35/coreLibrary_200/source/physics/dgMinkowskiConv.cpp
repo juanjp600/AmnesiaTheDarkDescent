@@ -1177,7 +1177,7 @@ class dgContactSolver
             if (dgAbsf(den) < dgFloat32(1.0e-24f))
             {
               den =
-                  dgFloat32(1.0e-24f) * (den > dgFloat32(0.0f)) ?
+                (dgFloat32(1.0e-24f) * (den > dgFloat32(0.0f))) ?
                       dgFloat32(1.0f) : dgFloat32(-1.0f);
             }
             den = test0 / den;
